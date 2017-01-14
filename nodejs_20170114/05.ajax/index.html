@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index页面</title>
+</head>
+<body>
+    <div class="box">
+        
+    </div>
+    <script src="./jquery.min.js"></script>
+    <script>
+        // get 的请求实例
+       /* $.ajax({
+            type : 'GET',
+            url : '/getData',
+            dataType:'JSON',
+            success : function(info){
+                console.log(info.name);
+                console.log(info.age);
+            }
+        })*/
+
+        /*POST的请求*/
+        $.ajax({
+            type : 'POST',
+            url : '/getData',
+            data : {
+                "name" : "waxun",
+                "age" : "11"
+            },
+            success : function(info){
+                console.log(info);
+            }
+        })
+    </script>
+</body>
+</html>

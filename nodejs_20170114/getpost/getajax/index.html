@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index页面</title>
+</head>
+<body>
+    <div class="box">
+        
+    </div>
+    <script src="./jquery.min.js"></script>
+    <script>
+        // get 的请求实例
+        //给get请求设置参数
+        //dataType  希望服务器返回的是JSON数据
+       $.ajax({
+            type : 'GET',
+            url : '/getData',
+            data : {
+                "name" : "waxun",
+                "age" : 11
+            },
+            success : function(info){
+                console.log(typeof info);
+                //console.log(JSON.parse(info));
+            }
+        })
+    </script>
+</body>
+</html>

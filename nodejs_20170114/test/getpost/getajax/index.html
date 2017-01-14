@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index页面</title>
+</head>
+<body>
+    <div class="box">
+        
+    </div>
+    <script src="./jquery.min.js"></script>
+    <script>
+        // get 的请求实例
+        //给get请求设置参数
+       $.ajax({
+            type : 'GET',
+            url : '/getData',
+            data : {
+                "name" : "waxun",
+                "age" : 11
+            },
+            success : function(info){
+                console.log(info);
+            }
+        })
+    </script>
+</body>
+</html>
